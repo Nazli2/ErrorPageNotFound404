@@ -1,0 +1,78 @@
+body {
+    background-color: #000; /* Siyah arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.neon-text {
+    display: flex;
+    gap: 10px; /* Rakamlar arasındaki boşluk */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.neon-text span {
+    font-size: 150px;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+                 0 0 30px rgba(255, 255, 255, 0.7),
+                 0 0 45px rgba(255, 255, 255, 0.5);
+}
+
+.red {
+    color: #ff5733; /* Canlı kırmızı */
+    text-shadow: 0 0 15px #ff5733, 0 0 30px #ff5733, 0 0 45px #ff5733;
+}
+
+.blue {
+    color: #2980b9; /* Canlı mavi */
+    text-shadow: 0 0 15px #2980b9, 0 0 30px #2980b9, 0 0 45px #2980b9;
+}
+
+.green {
+    color: #27ae60; /* Canlı yeşil */
+    text-shadow: 0 0 15px #27ae60, 0 0 30px #27ae60, 0 0 45px #27ae60;
+}
+
+p {
+    font-size: 20px;
+    color: #fff; /* Beyaz metin rengi */
+    font-family: "Playwrite AU SA", serif;
+    margin-top: 20px; /* Rakamların altında boşluk bırakır */
+}
+
+.message {
+    font-size: 24px;
+    color: #ecf0f1; /* Hafif gri beyaz mesaj metni */
+    margin-top: 30px; /* Mesajın biraz daha aşağıda görünmesini sağlar */
+}
+
+button {
+    background-color: #ff6347; /* Parlak domates kırmızısı */
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 99, 71, 0.7); /* Canlı gölge efekti */
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    font-family: "Playwrite AU SA", serif;
+    display: flex;
+    align-items: center; /* Yatay ortalama */
+    gap: 10px; /* İkon ile metin arasındaki mesafe */
+}
+
+button:hover {
+    background-color: #e74c3c; /* Hover için koyu kırmızı */
+    box-shadow: 0 0 25px rgba(231, 76, 60, 0.8); /* Hover sırasında parlak gölge */
+}
+
+button:focus {
+    outline: none;
+}
